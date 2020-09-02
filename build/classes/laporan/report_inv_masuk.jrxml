@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7366461e-1c2f-4045-9820-73b2027db979">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     trx_inventaris_masuk.`kd_inventaris_masuk` AS trx_inventaris_masuk_kd_inventaris_masuk,
+     trx_inventaris_masuk.`kd_barang` AS trx_inventaris_masuk_kd_barang,
+     trx_inventaris_masuk.`jumlah` AS trx_inventaris_masuk_jumlah,
+     trx_inventaris_masuk.`nilai_barang` AS trx_inventaris_masuk_nilai_barang,
+     trx_inventaris_masuk.`tanggal_masuk` AS trx_inventaris_masuk_tanggal_masuk,
+     trx_inventaris_masuk.`id_user` AS trx_inventaris_masuk_id_user,
+     trx_inventaris_masuk.`kd_lokasi` AS trx_inventaris_masuk_kd_lokasi
+FROM
+     `trx_inventaris_masuk` trx_inventaris_masuk]]>
+	</queryString>
+	<field name="trx_inventaris_masuk_kd_inventaris_masuk" class="java.lang.String"/>
+	<field name="trx_inventaris_masuk_kd_barang" class="java.lang.String"/>
+	<field name="trx_inventaris_masuk_jumlah" class="java.lang.Float"/>
+	<field name="trx_inventaris_masuk_nilai_barang" class="java.lang.Float"/>
+	<field name="trx_inventaris_masuk_tanggal_masuk" class="java.sql.Timestamp"/>
+	<field name="trx_inventaris_masuk_id_user" class="java.lang.String"/>
+	<field name="trx_inventaris_masuk_kd_lokasi" class="java.lang.String"/>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#006699" uuid="27aa4df5-9359-4f39-94cb-e5c0d0d4720c"/>
+				<staticText>
+					<reportElement x="20" y="20" width="234" height="57" forecolor="#FFFFFF" uuid="fb3d794d-a2b6-4e03-b98d-54af4ac05f50"/>
+					<textElement>
+						<font size="18" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Laporan Pemasukan Barang  Inventaris]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="395" y="43" width="180" height="20" forecolor="#FFFFFF" uuid="b3f3056b-9b81-4769-92b0-a06db7f3bc4c"/>
+					<textElement textAlignment="Right">
+						<font size="14" isBold="false"/>
+					</textElement>
+					<text><![CDATA[]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="13"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="21">
+			<line>
+				<reportElement x="-20" y="20" width="595" height="1" forecolor="#666666" uuid="9596a22d-402b-4548-a4cd-08816371d158"/>
+			</line>
+			<staticText>
+				<reportElement mode="Opaque" x="100" y="0" width="108" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="3c18fb05-7d54-45dc-8a52-52a336e8b698"/>
+				<textElement textAlignment="Left">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kd Barang]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="208" y="0" width="60" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="8c6c16d1-dfee-4e0d-a364-a55f6a60ab0a"/>
+				<textElement textAlignment="Left">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jumlah]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="268" y="0" width="77" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="05a6fa3e-8c81-40ea-8d27-d1c38fd5affb"/>
+				<textElement textAlignment="Left">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nilai]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="345" y="0" width="88" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="f862528f-4635-42c8-ae0f-0dc0e4872fc6"/>
+				<textElement textAlignment="Left">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tanggal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="433" y="0" width="60" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="efb35944-1cc9-4eb4-9ba6-2f8a09fecb45"/>
+				<textElement textAlignment="Left">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[User ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="493" y="0" width="59" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="776a5452-bf26-41db-af0b-69a5ab0817dc"/>
+				<textElement textAlignment="Left">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Lokasi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="100" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="aecb2177-e723-4719-b54c-05e1fcb64f34"/>
+				<textElement textAlignment="Left">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[KD INV IN]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1" uuid="0310f49a-3fd3-4d22-af18-d9843317efda"/>
+			</line>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="100" y="0" width="108" height="20" uuid="b37c9840-ad18-424b-a423-dbae8cc03688"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{trx_inventaris_masuk_kd_barang}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="208" y="0" width="60" height="20" uuid="ff13618a-e859-42d6-a3f4-6aa22aff4783"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{trx_inventaris_masuk_jumlah}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="268" y="0" width="77" height="20" uuid="1f5e93e7-94d6-474f-a80b-6ff613875960"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{trx_inventaris_masuk_nilai_barang}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="345" y="0" width="88" height="20" uuid="0734fa62-6a0f-476d-9b76-338e1ea6862a"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{trx_inventaris_masuk_tanggal_masuk}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="433" y="0" width="60" height="20" uuid="afe723e5-1990-4e0e-a3ce-4371b53f6e22"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{trx_inventaris_masuk_id_user}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="493" y="0" width="59" height="20" uuid="2c590d75-e786-47d3-81a8-07d5b713cb9f"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{trx_inventaris_masuk_kd_lokasi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="100" height="20" uuid="ebc5b961-adb4-4e95-a665-7755fcea15e3"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{trx_inventaris_masuk_kd_inventaris_masuk}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="17">
+			<textField>
+				<reportElement mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6" uuid="0218b31d-dee5-45b8-9d72-8bd2e6b6a15c"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6" uuid="4d39d83a-1e8d-4036-a8f7-89fed084fe2b"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="0" y="4" width="100" height="13" uuid="b4be7ea2-c475-4c86-9b26-4caf6bac3136"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>
